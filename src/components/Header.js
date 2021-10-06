@@ -199,9 +199,14 @@ a{
     }
 }}
 
-/* @media (max-width: 768px){
-    display: none;
-} */
+@media screen and (max-width: 768px){
+    a{
+        padding:0 5px;
+        span{
+            display: none;
+        }
+    }
+}
 
 `;
 const Login = styled.a`
@@ -249,6 +254,10 @@ cursor: pointer;
 align-items: center;
 justify-content: center;
 
+@media screen and (max-width: 768px){
+    height:50px;
+    width:50px;
+}
 
 ${UserImg}{
     border-radius:50%;
